@@ -50,7 +50,7 @@ $(document).ready(function() {
     });
   });
 
-  $('.search-btn').on('click', function() {
+  $('.search-input').on('input', function() {
     var gen = $('.search-input').val();
     $.ajax({
       url: '/search',

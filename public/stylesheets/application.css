@@ -1,5 +1,6 @@
 #index-button {
   padding-left: 20px;
+  margin-bottom: -10px;
 }
 
 h1 {
@@ -11,6 +12,7 @@ h1 {
   margin left: 20px;
   padding-left:20px;
   margin-right: 5px;
+  margin-bottom: 10px;
 }
 
 .search-btn {
@@ -32,4 +34,14 @@ h1 {
 
 #create-button {
   padding: 20px;
+}
+
+.btn-primary {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.new-form {
+  max-width: 500px;
+  margin-left: -150px;
 }
