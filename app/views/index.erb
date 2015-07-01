@@ -1,1 +1,56 @@
-<h1>Home Page</h1>
+<h1>Contacts v4: Electric Boogaloo</h1>
+  <div id="search">
+  <input type="text" class="form control search-input" name="search"><button class="search-btn btn btn-success">Search</button>
+  </div>
+  <div id="index-button">
+    <button id="get-all-button">All Contacts</button>
+  </div>
+  <div id="create-button">
+    <button id="create-contact">Create Contact</button>
+  </div>
+    <div class="container create-form">
+      <div class="row ">
+        <div class="new_form col-xs-10 col-md-6">
+          <% if @message %>
+          <div class="error-message"><%= @message %></div>
+          <% end %>
+            
+            <form class="form-group" id="new-contact-form" method="post" action="/contacts">
+            
+            <div>
+              <label>First Name:</label>   
+              <input type="text" class="form-control firstname-input" name="firstname">
+            </div>
+
+            <div> 
+              <label>Last Name:</label>
+              <input type="text"  class="form-control lastname-input" name="lastname">
+            </div>
+
+            <div> 
+              <label>Email:</label>
+              <input type="text"  class="form-control email-input" name="email">
+            </div>
+
+            <div>
+              <input type="submit" class="add-new btn btn-primary" value="Add!">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  
+
+  <table id="contact-list" class="table">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
